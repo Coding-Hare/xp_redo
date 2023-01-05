@@ -68,6 +68,7 @@ minetest.register_globalstep(function(dtime)
     end
     if count >= 5 then
         write_file(xp_redo.highscore)
+	count = 0
     end
 end)
 
